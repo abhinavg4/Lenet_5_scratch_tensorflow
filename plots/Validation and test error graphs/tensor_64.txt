@@ -1,0 +1,56 @@
+0: accuracy:0.109375 loss: 37.3472
+0: ********* epoch 1 ********* test accuracy:0.155 test loss: 37.1639
+/usr/lib64/python3.5/site-packages/matplotlib/backend_bases.py:2437: MatplotlibDeprecationWarning: Using default event loop until function specific to this GUI is implemented
+  warnings.warn(str, mplDeprecation)
+78: accuracy:0.859375 loss: 5.23931
+78: ********* epoch 1 ********* test accuracy:0.9081 test loss: 4.76702
+156: accuracy:0.953125 loss: 4.19146
+156: ********* epoch 1 ********* test accuracy:0.9251 test loss: 3.66698
+234: accuracy:1.0 loss: 0.751951
+234: ********* epoch 1 ********* test accuracy:0.9628 test loss: 1.99843
+312: accuracy:0.953125 loss: 1.9164
+312: ********* epoch 1 ********* test accuracy:0.9644 test loss: 1.79592
+390: accuracy:0.96875 loss: 1.0216
+390: ********* epoch 1 ********* test accuracy:0.9679 test loss: 1.59242
+468: accuracy:1.0 loss: 0.805894
+468: ********* epoch 1 ********* test accuracy:0.9747 test loss: 1.23774
+546: accuracy:1.0 loss: 0.204882
+546: ********* epoch 1 ********* test accuracy:0.9743 test loss: 1.28553
+624: accuracy:0.96875 loss: 2.50334
+624: ********* epoch 1 ********* test accuracy:0.97 test loss: 1.49012
+702: accuracy:0.984375 loss: 0.754711
+702: ********* epoch 1 ********* test accuracy:0.9779 test loss: 1.06493
+780: accuracy:0.96875 loss: 1.17929
+780: ********* epoch 1 ********* test accuracy:0.9767 test loss: 1.14699
+858: accuracy:1.0 loss: 0.7188
+858: ********* epoch 1 ********* test accuracy:0.9807 test loss: 0.982152
+936: accuracy:0.96875 loss: 4.86635
+936: ********* epoch 1 ********* test accuracy:0.9742 test loss: 1.27569
+1014: accuracy:0.96875 loss: 0.77745
+1014: ********* epoch 2 ********* test accuracy:0.9839 test loss: 0.732141
+1092: accuracy:0.984375 loss: 0.573441
+1092: ********* epoch 2 ********* test accuracy:0.9861 test loss: 0.642456
+1170: accuracy:0.984375 loss: 0.351607
+1170: ********* epoch 2 ********* test accuracy:0.9862 test loss: 0.65896
+1248: accuracy:1.0 loss: 0.289658
+1248: ********* epoch 2 ********* test accuracy:0.9855 test loss: 0.681273
+1326: accuracy:1.0 loss: 0.419749
+1326: ********* epoch 2 ********* test accuracy:0.9832 test loss: 0.779978
+1404: accuracy:0.96875 loss: 1.42824
+1404: ********* epoch 2 ********* test accuracy:0.9876 test loss: 0.612126
+1482: accuracy:0.96875 loss: 1.50022
+1482: ********* epoch 2 ********* test accuracy:0.9868 test loss: 0.612098
+1560: accuracy:1.0 loss: 0.156811
+1560: ********* epoch 2 ********* test accuracy:0.9856 test loss: 0.727035
+1638: accuracy:0.96875 loss: 1.58659
+1638: ********* epoch 2 ********* test accuracy:0.9878 test loss: 0.591809
+1716: accuracy:0.984375 loss: 0.500724
+1716: ********* epoch 2 ********* test accuracy:0.9867 test loss: 0.623875
+1794: accuracy:1.0 loss: 0.107119
+1794: ********* epoch 2 ********* test accuracy:0.9851 test loss: 0.729259
+1872: accuracy:1.0 loss: 0.162672
+1872: ********* epoch 2 ********* test accuracy:0.9877 test loss: 0.596383
+1951: accuracy:1.0 loss: 0.28678
+1951: ********* epoch 3 ********* test accuracy:0.9889 test loss: 0.528674
+max test accuracy: 0.9889
+

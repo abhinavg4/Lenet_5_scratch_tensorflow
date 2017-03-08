@@ -1,0 +1,1417 @@
+{
+    "traceEvents": [
+        {
+            "pid": 0,
+            "args": {
+                "name": "Allocators"
+            },
+            "ph": "M",
+            "name": "process_name"
+        },
+        {
+            "pid": 1,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/cpu:0 Compute"
+            },
+            "ph": "M",
+            "name": "process_name"
+        },
+        {
+            "pid": 2,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/cpu:0 Tensors"
+            },
+            "ph": "M",
+            "name": "process_name"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "NoOp",
+            "pid": 1,
+            "args": {
+                "op": "NoOp",
+                "name": "_SOURCE"
+            },
+            "ts": 1488907586982215,
+            "cat": "Op",
+            "dur": 11
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Const",
+            "pid": 1,
+            "args": {
+                "op": "Const",
+                "name": "Slice/begin/_2__cf__7"
+            },
+            "ts": 1488907586982257,
+            "cat": "Op",
+            "dur": 10
+        },
+        {
+            "tid": 1,
+            "ph": "X",
+            "name": "VariableV2",
+            "pid": 1,
+            "args": {
+                "op": "VariableV2",
+                "name": "Variable"
+            },
+            "ts": 1488907586982262,
+            "cat": "Op",
+            "dur": 10
+        },
+        {
+            "tid": 2,
+            "ph": "X",
+            "name": "VariableV2",
+            "pid": 1,
+            "args": {
+                "op": "VariableV2",
+                "name": "Variable_1"
+            },
+            "ts": 1488907586982264,
+            "cat": "Op",
+            "dur": 9
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "VariableV2",
+            "pid": 1,
+            "args": {
+                "op": "VariableV2",
+                "name": "Variable_3"
+            },
+            "ts": 1488907586982285,
+            "cat": "Op",
+            "dur": 4
+        },
+        {
+            "tid": 1,
+            "ph": "X",
+            "name": "Shape",
+            "pid": 1,
+            "args": {
+                "input0": "_recv_Placeholder_1_0",
+                "op": "Shape",
+                "name": "Shape_2"
+            },
+            "ts": 1488907586982281,
+            "cat": "Op",
+            "dur": 8
+        },
+        {
+            "tid": 3,
+            "ph": "X",
+            "name": "VariableV2",
+            "pid": 1,
+            "args": {
+                "op": "VariableV2",
+                "name": "Variable_2"
+            },
+            "ts": 1488907586982264,
+            "cat": "Op",
+            "dur": 8
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Identity",
+            "pid": 1,
+            "args": {
+                "input0": "Variable_3",
+                "op": "Identity",
+                "name": "Variable_3/read"
+            },
+            "ts": 1488907586982292,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 1,
+            "ph": "X",
+            "name": "VariableV2",
+            "pid": 1,
+            "args": {
+                "op": "VariableV2",
+                "name": "Variable_4"
+            },
+            "ts": 1488907586982293,
+            "cat": "Op",
+            "dur": 4
+        },
+        {
+            "tid": 2,
+            "ph": "X",
+            "name": "Slice",
+            "pid": 1,
+            "args": {
+                "input0": "Shape_2",
+                "input2": "Slice_1/size",
+                "input1": "Slice_1/begin",
+                "op": "Slice",
+                "name": "Slice_1"
+            },
+            "ts": 1488907586982292,
+            "cat": "Op",
+            "dur": 8
+        },
+        {
+            "tid": 1,
+            "ph": "s",
+            "name": "Shape_2",
+            "id": 0,
+            "pid": 1,
+            "ts": 1488907586982289,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 2,
+            "ph": "t",
+            "name": "Shape_2",
+            "id": 0,
+            "pid": 1,
+            "ts": 1488907586982292,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "VariableV2",
+            "pid": 1,
+            "args": {
+                "op": "VariableV2",
+                "name": "Variable_5"
+            },
+            "ts": 1488907586982298,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 3,
+            "ph": "X",
+            "name": "Identity",
+            "pid": 1,
+            "args": {
+                "input0": "Variable_2",
+                "op": "Identity",
+                "name": "Variable_2/read"
+            },
+            "ts": 1488907586982296,
+            "cat": "Op",
+            "dur": 5
+        },
+        {
+            "tid": 1,
+            "ph": "X",
+            "name": "Identity",
+            "pid": 1,
+            "args": {
+                "input0": "Variable_4",
+                "op": "Identity",
+                "name": "Variable_4/read"
+            },
+            "ts": 1488907586982299,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 4,
+            "ph": "X",
+            "name": "Identity",
+            "pid": 1,
+            "args": {
+                "input0": "Variable",
+                "op": "Identity",
+                "name": "Variable/read"
+            },
+            "ts": 1488907586982294,
+            "cat": "Op",
+            "dur": 9
+        },
+        {
+            "tid": 1,
+            "ph": "s",
+            "name": "Variable",
+            "id": 1,
+            "pid": 1,
+            "ts": 1488907586982272,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 4,
+            "ph": "t",
+            "name": "Variable",
+            "id": 1,
+            "pid": 1,
+            "ts": 1488907586982294,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "VariableV2",
+            "pid": 1,
+            "args": {
+                "op": "VariableV2",
+                "name": "Variable_7"
+            },
+            "ts": 1488907586982303,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 1,
+            "ph": "X",
+            "name": "Identity",
+            "pid": 1,
+            "args": {
+                "input0": "Variable_5",
+                "op": "Identity",
+                "name": "Variable_5/read"
+            },
+            "ts": 1488907586982303,
+            "cat": "Op",
+            "dur": 4
+        },
+        {
+            "tid": 0,
+            "ph": "s",
+            "name": "Variable_5",
+            "id": 2,
+            "pid": 1,
+            "ts": 1488907586982301,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 1,
+            "ph": "t",
+            "name": "Variable_5",
+            "id": 2,
+            "pid": 1,
+            "ts": 1488907586982303,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 2,
+            "ph": "X",
+            "name": "VariableV2",
+            "pid": 1,
+            "args": {
+                "op": "VariableV2",
+                "name": "Variable_6"
+            },
+            "ts": 1488907586982304,
+            "cat": "Op",
+            "dur": 4
+        },
+        {
+            "tid": 3,
+            "ph": "X",
+            "name": "VariableV2",
+            "pid": 1,
+            "args": {
+                "op": "VariableV2",
+                "name": "Variable_9"
+            },
+            "ts": 1488907586982306,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Identity",
+            "pid": 1,
+            "args": {
+                "input0": "Variable_7",
+                "op": "Identity",
+                "name": "Variable_7/read"
+            },
+            "ts": 1488907586982307,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 5,
+            "ph": "X",
+            "name": "Const",
+            "pid": 1,
+            "args": {
+                "op": "Const",
+                "name": "Reshape/shape"
+            },
+            "ts": 1488907586982269,
+            "cat": "Op",
+            "dur": 4
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Identity",
+            "pid": 1,
+            "args": {
+                "input0": "Variable_9",
+                "op": "Identity",
+                "name": "Variable_9/read"
+            },
+            "ts": 1488907586982311,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 3,
+            "ph": "s",
+            "name": "Variable_9",
+            "id": 3,
+            "pid": 1,
+            "ts": 1488907586982309,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Variable_9",
+            "id": 3,
+            "pid": 1,
+            "ts": 1488907586982311,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 1,
+            "ph": "X",
+            "name": "Const",
+            "pid": 1,
+            "args": {
+                "op": "Const",
+                "name": "concat/values_0"
+            },
+            "ts": 1488907586982313,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 2,
+            "ph": "X",
+            "name": "Identity",
+            "pid": 1,
+            "args": {
+                "input0": "Variable_6",
+                "op": "Identity",
+                "name": "Variable_6/read"
+            },
+            "ts": 1488907586982314,
+            "cat": "Op",
+            "dur": 4
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Const",
+            "pid": 1,
+            "args": {
+                "op": "Const",
+                "name": "concat/axis"
+            },
+            "ts": 1488907586982318,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 4,
+            "ph": "X",
+            "name": "VariableV2",
+            "pid": 1,
+            "args": {
+                "op": "VariableV2",
+                "name": "Variable_8"
+            },
+            "ts": 1488907586982305,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Identity",
+            "pid": 1,
+            "args": {
+                "input0": "Variable_8",
+                "op": "Identity",
+                "name": "Variable_8/read"
+            },
+            "ts": 1488907586982324,
+            "cat": "Op",
+            "dur": 4
+        },
+        {
+            "tid": 4,
+            "ph": "s",
+            "name": "Variable_8",
+            "id": 4,
+            "pid": 1,
+            "ts": 1488907586982308,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Variable_8",
+            "id": 4,
+            "pid": 1,
+            "ts": 1488907586982324,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 1,
+            "ph": "X",
+            "name": "Const",
+            "pid": 1,
+            "args": {
+                "op": "Const",
+                "name": "Slice_2/begin"
+            },
+            "ts": 1488907586982326,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 5,
+            "ph": "X",
+            "name": "Identity",
+            "pid": 1,
+            "args": {
+                "input0": "Variable_1",
+                "op": "Identity",
+                "name": "Variable_1/read"
+            },
+            "ts": 1488907586982293,
+            "cat": "Op",
+            "dur": 40
+        },
+        {
+            "tid": 2,
+            "ph": "s",
+            "name": "Variable_1",
+            "id": 5,
+            "pid": 1,
+            "ts": 1488907586982273,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 5,
+            "ph": "t",
+            "name": "Variable_1",
+            "id": 5,
+            "pid": 1,
+            "ts": 1488907586982293,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Const",
+            "pid": 1,
+            "args": {
+                "op": "Const",
+                "name": "mul/y"
+            },
+            "ts": 1488907586982331,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Const",
+            "pid": 1,
+            "args": {
+                "op": "Const",
+                "name": "ArgMax/dimension"
+            },
+            "ts": 1488907586982336,
+            "cat": "Op",
+            "dur": 2
+        },
+        {
+            "tid": 1,
+            "ph": "X",
+            "name": "Reshape",
+            "pid": 1,
+            "args": {
+                "input0": "Variable_1/read",
+                "input1": "Reshape_5/shape",
+                "op": "Reshape",
+                "name": "Reshape_5"
+            },
+            "ts": 1488907586982335,
+            "cat": "Op",
+            "dur": 3
+        },
+        {
+            "tid": 5,
+            "ph": "s",
+            "name": "Variable_1/read",
+            "id": 6,
+            "pid": 1,
+            "ts": 1488907586982333,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 1,
+            "ph": "t",
+            "name": "Variable_1/read",
+            "id": 6,
+            "pid": 1,
+            "ts": 1488907586982335,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 2,
+            "ph": "X",
+            "name": "ConcatV2",
+            "pid": 1,
+            "args": {
+                "input0": "concat_1/values_0",
+                "input2": "concat_1/axis",
+                "input1": "Slice_1",
+                "op": "ConcatV2",
+                "name": "concat_1"
+            },
+            "ts": 1488907586982324,
+            "cat": "Op",
+            "dur": 16
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Reshape",
+            "pid": 1,
+            "args": {
+                "input0": "Variable/read",
+                "input1": "Reshape_4/shape",
+                "op": "Reshape",
+                "name": "Reshape_4"
+            },
+            "ts": 1488907586982343,
+            "cat": "Op",
+            "dur": 4
+        },
+        {
+            "tid": 4,
+            "ph": "s",
+            "name": "Variable/read",
+            "id": 7,
+            "pid": 1,
+            "ts": 1488907586982303,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Variable/read",
+            "id": 7,
+            "pid": 1,
+            "ts": 1488907586982343,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 1,
+            "ph": "X",
+            "name": "Reshape",
+            "pid": 1,
+            "args": {
+                "input0": "_recv_Placeholder_1_0",
+                "input1": "concat_1",
+                "op": "Reshape",
+                "name": "Reshape_2"
+            },
+            "ts": 1488907586982343,
+            "cat": "Op",
+            "dur": 4
+        },
+        {
+            "tid": 2,
+            "ph": "s",
+            "name": "concat_1",
+            "id": 8,
+            "pid": 1,
+            "ts": 1488907586982340,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 1,
+            "ph": "t",
+            "name": "concat_1",
+            "id": 8,
+            "pid": 1,
+            "ts": 1488907586982343,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 2,
+            "ph": "X",
+            "name": "ArgMax",
+            "pid": 1,
+            "args": {
+                "input0": "_recv_Placeholder_1_0",
+                "input1": "ArgMax_1/dimension",
+                "op": "ArgMax",
+                "name": "ArgMax_1"
+            },
+            "ts": 1488907586982341,
+            "cat": "Op",
+            "dur": 13
+        },
+        {
+            "tid": 6,
+            "ph": "X",
+            "name": "Conv2D",
+            "pid": 1,
+            "args": {
+                "input0": "_recv_Placeholder_0",
+                "input1": "Variable/read",
+                "op": "Conv2D",
+                "name": "Conv2D"
+            },
+            "ts": 1488907586982305,
+            "cat": "Op",
+            "dur": 27864
+        },
+        {
+            "tid": 4,
+            "ph": "s",
+            "name": "Variable/read",
+            "id": 9,
+            "pid": 1,
+            "ts": 1488907586982303,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 6,
+            "ph": "t",
+            "name": "Variable/read",
+            "id": 9,
+            "pid": 1,
+            "ts": 1488907586982305,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Add",
+            "pid": 1,
+            "args": {
+                "input0": "Conv2D",
+                "input1": "Variable_1/read",
+                "op": "Add",
+                "name": "add"
+            },
+            "ts": 1488907587010204,
+            "cat": "Op",
+            "dur": 4559
+        },
+        {
+            "tid": 6,
+            "ph": "s",
+            "name": "Conv2D",
+            "id": 10,
+            "pid": 1,
+            "ts": 1488907587010169,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Conv2D",
+            "id": 10,
+            "pid": 1,
+            "ts": 1488907587010204,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 5,
+            "ph": "s",
+            "name": "Variable_1/read",
+            "id": 11,
+            "pid": 1,
+            "ts": 1488907586982333,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Variable_1/read",
+            "id": 11,
+            "pid": 1,
+            "ts": 1488907587010204,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Relu",
+            "pid": 1,
+            "args": {
+                "input0": "add",
+                "op": "Relu",
+                "name": "Relu"
+            },
+            "ts": 1488907587014791,
+            "cat": "Op",
+            "dur": 1212
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "MaxPool",
+            "pid": 1,
+            "args": {
+                "input0": "Relu",
+                "op": "MaxPool",
+                "name": "MaxPool"
+            },
+            "ts": 1488907587016021,
+            "cat": "Op",
+            "dur": 3291
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Conv2D",
+            "pid": 1,
+            "args": {
+                "input0": "MaxPool",
+                "input1": "Variable_2/read",
+                "op": "Conv2D",
+                "name": "Conv2D_1"
+            },
+            "ts": 1488907587019336,
+            "cat": "Op",
+            "dur": 8574
+        },
+        {
+            "tid": 3,
+            "ph": "s",
+            "name": "Variable_2/read",
+            "id": 12,
+            "pid": 1,
+            "ts": 1488907586982301,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Variable_2/read",
+            "id": 12,
+            "pid": 1,
+            "ts": 1488907587019336,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Add",
+            "pid": 1,
+            "args": {
+                "input0": "Conv2D_1",
+                "input1": "Variable_3/read",
+                "op": "Add",
+                "name": "add_1"
+            },
+            "ts": 1488907587027932,
+            "cat": "Op",
+            "dur": 513
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Relu",
+            "pid": 1,
+            "args": {
+                "input0": "add_1",
+                "op": "Relu",
+                "name": "Relu_1"
+            },
+            "ts": 1488907587028461,
+            "cat": "Op",
+            "dur": 151
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "MaxPool",
+            "pid": 1,
+            "args": {
+                "input0": "Relu_1",
+                "op": "MaxPool",
+                "name": "MaxPool_1"
+            },
+            "ts": 1488907587028626,
+            "cat": "Op",
+            "dur": 925
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Reshape",
+            "pid": 1,
+            "args": {
+                "input0": "MaxPool_1",
+                "input1": "Reshape/shape",
+                "op": "Reshape",
+                "name": "Reshape"
+            },
+            "ts": 1488907587029559,
+            "cat": "Op",
+            "dur": 8
+        },
+        {
+            "tid": 5,
+            "ph": "s",
+            "name": "Reshape/shape",
+            "id": 13,
+            "pid": 1,
+            "ts": 1488907586982273,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Reshape/shape",
+            "id": 13,
+            "pid": 1,
+            "ts": 1488907587029559,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "MatMul",
+            "pid": 1,
+            "args": {
+                "input0": "Reshape",
+                "input1": "Variable_4/read",
+                "op": "MatMul",
+                "name": "MatMul"
+            },
+            "ts": 1488907587029571,
+            "cat": "Op",
+            "dur": 426
+        },
+        {
+            "tid": 1,
+            "ph": "s",
+            "name": "Variable_4/read",
+            "id": 14,
+            "pid": 1,
+            "ts": 1488907586982302,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Variable_4/read",
+            "id": 14,
+            "pid": 1,
+            "ts": 1488907587029571,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Add",
+            "pid": 1,
+            "args": {
+                "input0": "MatMul",
+                "input1": "Variable_5/read",
+                "op": "Add",
+                "name": "add_2"
+            },
+            "ts": 1488907587030002,
+            "cat": "Op",
+            "dur": 283
+        },
+        {
+            "tid": 1,
+            "ph": "s",
+            "name": "Variable_5/read",
+            "id": 15,
+            "pid": 1,
+            "ts": 1488907586982307,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Variable_5/read",
+            "id": 15,
+            "pid": 1,
+            "ts": 1488907587030002,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Relu",
+            "pid": 1,
+            "args": {
+                "input0": "add_2",
+                "op": "Relu",
+                "name": "Relu_2"
+            },
+            "ts": 1488907587030289,
+            "cat": "Op",
+            "dur": 31
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "MatMul",
+            "pid": 1,
+            "args": {
+                "input0": "Relu_2",
+                "input1": "Variable_6/read",
+                "op": "MatMul",
+                "name": "MatMul_1"
+            },
+            "ts": 1488907587030323,
+            "cat": "Op",
+            "dur": 143
+        },
+        {
+            "tid": 2,
+            "ph": "s",
+            "name": "Variable_6/read",
+            "id": 16,
+            "pid": 1,
+            "ts": 1488907586982318,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Variable_6/read",
+            "id": 16,
+            "pid": 1,
+            "ts": 1488907587030323,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Add",
+            "pid": 1,
+            "args": {
+                "input0": "MatMul_1",
+                "input1": "Variable_7/read",
+                "op": "Add",
+                "name": "add_3"
+            },
+            "ts": 1488907587030471,
+            "cat": "Op",
+            "dur": 92
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Relu",
+            "pid": 1,
+            "args": {
+                "input0": "add_3",
+                "op": "Relu",
+                "name": "Relu_3"
+            },
+            "ts": 1488907587030567,
+            "cat": "Op",
+            "dur": 13
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "MatMul",
+            "pid": 1,
+            "args": {
+                "input0": "Relu_3",
+                "input1": "Variable_8/read",
+                "op": "MatMul",
+                "name": "MatMul_2"
+            },
+            "ts": 1488907587030583,
+            "cat": "Op",
+            "dur": 33
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Add",
+            "pid": 1,
+            "args": {
+                "input0": "MatMul_2",
+                "input1": "Variable_9/read",
+                "op": "Add",
+                "name": "add_4"
+            },
+            "ts": 1488907587030618,
+            "cat": "Op",
+            "dur": 18
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Shape",
+            "pid": 1,
+            "args": {
+                "input0": "add_4",
+                "op": "Shape",
+                "name": "Shape"
+            },
+            "ts": 1488907587030645,
+            "cat": "Op",
+            "dur": 6
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Slice",
+            "pid": 1,
+            "args": {
+                "input0": "Shape_1",
+                "input2": "Slice/size",
+                "input1": "Slice/begin",
+                "op": "Slice",
+                "name": "Slice"
+            },
+            "ts": 1488907587030656,
+            "cat": "Op",
+            "dur": 10
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "ConcatV2",
+            "pid": 1,
+            "args": {
+                "input0": "concat/values_0",
+                "input2": "concat/axis",
+                "input1": "Slice",
+                "op": "ConcatV2",
+                "name": "concat"
+            },
+            "ts": 1488907587030671,
+            "cat": "Op",
+            "dur": 18
+        },
+        {
+            "tid": 1,
+            "ph": "s",
+            "name": "concat/values_0",
+            "id": 17,
+            "pid": 1,
+            "ts": 1488907586982316,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "concat/values_0",
+            "id": 17,
+            "pid": 1,
+            "ts": 1488907587030671,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 1,
+            "ph": "X",
+            "name": "Slice",
+            "pid": 1,
+            "args": {
+                "input0": "Shape",
+                "input2": "Slice_2/size",
+                "input1": "Slice_2/begin",
+                "op": "Slice",
+                "name": "Slice_2"
+            },
+            "ts": 1488907587030674,
+            "cat": "Op",
+            "dur": 21
+        },
+        {
+            "tid": 0,
+            "ph": "s",
+            "name": "Shape",
+            "id": 18,
+            "pid": 1,
+            "ts": 1488907587030651,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 1,
+            "ph": "t",
+            "name": "Shape",
+            "id": 18,
+            "pid": 1,
+            "ts": 1488907587030674,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Reshape",
+            "pid": 1,
+            "args": {
+                "input0": "add_4",
+                "input1": "concat",
+                "op": "Reshape",
+                "name": "Reshape_1"
+            },
+            "ts": 1488907587030693,
+            "cat": "Op",
+            "dur": 9
+        },
+        {
+            "tid": 2,
+            "ph": "X",
+            "name": "Softmax",
+            "pid": 1,
+            "args": {
+                "input0": "add_4",
+                "op": "Softmax",
+                "name": "Softmax"
+            },
+            "ts": 1488907587030666,
+            "cat": "Op",
+            "dur": 123
+        },
+        {
+            "tid": 0,
+            "ph": "s",
+            "name": "add_4",
+            "id": 19,
+            "pid": 1,
+            "ts": 1488907587030636,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 2,
+            "ph": "t",
+            "name": "add_4",
+            "id": 19,
+            "pid": 1,
+            "ts": 1488907587030666,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "ArgMax",
+            "pid": 1,
+            "args": {
+                "input0": "Softmax",
+                "input1": "ArgMax/dimension",
+                "op": "ArgMax",
+                "name": "ArgMax"
+            },
+            "ts": 1488907587030795,
+            "cat": "Op",
+            "dur": 30
+        },
+        {
+            "tid": 2,
+            "ph": "s",
+            "name": "Softmax",
+            "id": 20,
+            "pid": 1,
+            "ts": 1488907587030789,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Softmax",
+            "id": 20,
+            "pid": 1,
+            "ts": 1488907587030795,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Equal",
+            "pid": 1,
+            "args": {
+                "input0": "ArgMax",
+                "input1": "ArgMax_1",
+                "op": "Equal",
+                "name": "Equal"
+            },
+            "ts": 1488907587030829,
+            "cat": "Op",
+            "dur": 14
+        },
+        {
+            "tid": 2,
+            "ph": "s",
+            "name": "ArgMax_1",
+            "id": 21,
+            "pid": 1,
+            "ts": 1488907586982354,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "ArgMax_1",
+            "id": 21,
+            "pid": 1,
+            "ts": 1488907587030829,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Cast",
+            "pid": 1,
+            "args": {
+                "input0": "Equal",
+                "op": "Cast",
+                "name": "Cast_1"
+            },
+            "ts": 1488907587030846,
+            "cat": "Op",
+            "dur": 9
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Mean",
+            "pid": 1,
+            "args": {
+                "input0": "Cast_1",
+                "input1": "Const_1",
+                "op": "Mean",
+                "name": "Mean_1"
+            },
+            "ts": 1488907587030858,
+            "cat": "Op",
+            "dur": 13
+        },
+        {
+            "tid": 1,
+            "ph": "X",
+            "name": "SoftmaxCrossEntropyWithLogits",
+            "pid": 1,
+            "args": {
+                "input0": "Reshape_1",
+                "input1": "Reshape_2",
+                "op": "SoftmaxCrossEntropyWithLogits",
+                "name": "SoftmaxCrossEntropyWithLogits"
+            },
+            "ts": 1488907587030706,
+            "cat": "Op",
+            "dur": 293
+        },
+        {
+            "tid": 0,
+            "ph": "s",
+            "name": "Reshape_1",
+            "id": 22,
+            "pid": 1,
+            "ts": 1488907587030702,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 1,
+            "ph": "t",
+            "name": "Reshape_1",
+            "id": 22,
+            "pid": 1,
+            "ts": 1488907587030706,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Reshape",
+            "pid": 1,
+            "args": {
+                "input0": "SoftmaxCrossEntropyWithLogits",
+                "input1": "Slice_2",
+                "op": "Reshape",
+                "name": "Reshape_3"
+            },
+            "ts": 1488907587031004,
+            "cat": "Op",
+            "dur": 7
+        },
+        {
+            "tid": 1,
+            "ph": "s",
+            "name": "SoftmaxCrossEntropyWithLogits",
+            "id": 23,
+            "pid": 1,
+            "ts": 1488907587030999,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "SoftmaxCrossEntropyWithLogits",
+            "id": 23,
+            "pid": 1,
+            "ts": 1488907587031004,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 1,
+            "ph": "s",
+            "name": "Slice_2",
+            "id": 24,
+            "pid": 1,
+            "ts": 1488907587030695,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "t",
+            "name": "Slice_2",
+            "id": 24,
+            "pid": 1,
+            "ts": 1488907587031004,
+            "cat": "DataFlow"
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Mean",
+            "pid": 1,
+            "args": {
+                "input0": "Reshape_3",
+                "input1": "Const",
+                "op": "Mean",
+                "name": "Mean"
+            },
+            "ts": 1488907587031015,
+            "cat": "Op",
+            "dur": 16
+        },
+        {
+            "tid": 0,
+            "ph": "X",
+            "name": "Mul",
+            "pid": 1,
+            "args": {
+                "input0": "Mean",
+                "input1": "mul/y",
+                "op": "Mul",
+                "name": "mul"
+            },
+            "ts": 1488907587031036,
+            "cat": "Op",
+            "dur": 11
+        }
+    ]
+}
