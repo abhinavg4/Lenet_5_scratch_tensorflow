@@ -38,16 +38,16 @@ function [correctlyClassified, classificationErrors] = validateMLP(activationFun
             classificationErrors = classificationErrors + 1;
         end;
         tsne_m = [tsne_m;tsne_a'];
-        if(p)
-            figure;
-           str = sprintf('final fc vizualization 12x7 for digit %f',labels(n));
-            imagesc(reshape(tsne_m(n,:),[12,7]));colormap gray;title(str);
-            str1 = sprintf('f_fc_visual_b:%f_%f.png',batch,labels(n));
-            saveas(gcf,str1);
-            close(gcf);
-        end
+%         if(p)
+%             figure;
+%            str = sprintf('final fc vizualization 12x7 for digit %f',labels(n));
+%             imagesc(reshape(tsne_m(n,:),[12,7]));colormap gray;title(str);
+%             str1 = sprintf('f_fc_visual_b:%f_%f.png',batch,labels(n));
+%             saveas(gcf,str1);
+%             close(gcf);
+%         end
     end
-    mapx = tsne(tsne_m(1:5000,:),[],2,50,30);
-    figure ;
-    gscatter(mapx(:,1),mapx(:,2),labels(1:5000));
+%     mapx = tsne(tsne_m(1:5000,:),[],2,50,30);
+%     figure ;
+%     gscatter(mapx(:,1),mapx(:,2),labels(1:5000));
 end

@@ -22,8 +22,8 @@
     %if ADM is use
     b1 = 0.9; b2 = 0.999;epsi=10^-8;
     %methodToUse ; {1 : GD with momentum} ; {2 : Adam} ; {3 : Adagrad} ;
-    %use only momentum for now
-    methodToUse = 3;
+    %use only momentum or Adagrad for now
+    methodToUse = 1;
 %%
 
     % Choose activation function. Which Activation to use can be set in
@@ -36,15 +36,16 @@
     labelsi = loadMNISTLabels('t10k-labels.idx1-ubyte');
 %%
     % Choose batch size for batch update and epochs = number of iterations.
-    batchSize = [16 32 64 128];
-    epochs = 3;
+    batchSize = [32 64 128];
+    epochs = 4;
     r = randperm(60000);
     fprintf('Train lenet5 with %d hidden layers.\n', length(HiddenUnits));
     fprintf('Learning rate: %d.\n', learningRate);
     for b = batchSize
       learningRate = sqrt(b/8)*learningRate
     [Weights_conv Weights Weights_bias] = trainMLP(activationFunction, dActivationFunction, methodToUse, HiddenUnits, inputValues, targetValues, epochs, b, learningRate, momentum,b1,b2,epsi,bias,r(1,1:2000));
-
+    strrr = sprintf('Weights_%d',b);
+    save(strrr,'Weights_conv','Weights','Weights_bias');
     
     fprintf('Testing:\n');
 
